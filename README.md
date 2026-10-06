@@ -1,5 +1,5 @@
 Trabalho Web 
-João Burnett ,Nicole Nakahara, Ramon Gomes
+João Burnett, Nicole Nakahara, Ramon Gomes
 
 Atividade MVC Visualizar Entregas
 Utilizar a arquitetura MVC para um sistema de biblioteca.
