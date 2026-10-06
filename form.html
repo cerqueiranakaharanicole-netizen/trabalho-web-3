@@ -21,13 +21,12 @@
 
     <h3>Pesquisar usuário por documento</h3>
 
-    <form action="/usuarios" method="GET">
+    <form action="/usuarios/documento" method="GET">
 
         <input
             type="text"
             name="documento"
             placeholder="Documento"
-            required
         >
 
         <button type="submit">Pesquisar</button>
@@ -43,21 +42,18 @@
             type="text"
             name="documento"
             placeholder="Documento"
-            required
         >
 
         <input
             type="text"
             name="nome"
             placeholder="Nome"
-            required
         >
 
         <input
             type="email"
             name="email"
             placeholder="E-mail"
-            required
         >
 
         <button type="submit">Inserir</button>
@@ -67,33 +63,24 @@
 
     <h3>Editar usuário</h3>
 
-    <form action="/usuarios" method="POST">
-
-        <input
-            type="hidden"
-            name="_method"
-            value="PUT"
-        >
+    <form action="/usuarios" method="PUT">
 
         <input
             type="text"
             name="documento"
             placeholder="Documento"
-            required
         >
 
         <input
             type="text"
             name="nome"
             placeholder="Novo nome"
-            required
         >
 
         <input
             type="email"
             name="email"
             placeholder="Novo e-mail"
-            required
         >
 
         <button type="submit">Editar</button>
@@ -103,19 +90,12 @@
 
     <h3>Excluir usuário</h3>
 
-    <form action="/usuarios" method="POST">
-
-        <input
-            type="hidden"
-            name="_method"
-            value="DELETE"
-        >
+    <form action="/usuarios" method="DELETE">
 
         <input
             type="text"
             name="documento"
             placeholder="Documento"
-            required
         >
 
         <button type="submit">Excluir</button>
@@ -140,13 +120,12 @@
 
     <h3>Pesquisar livro por nome</h3>
 
-    <form action="/livros" method="GET">
+    <form action="/livros/nome" method="GET">
 
         <input
             type="text"
             name="nome"
             placeholder="Nome do livro"
-            required
         >
 
         <button type="submit">Pesquisar</button>
@@ -156,13 +135,12 @@
 
     <h3>Pesquisar livros de um autor</h3>
 
-    <form action="/livros" method="GET">
+    <form action="/livros/autor" method="GET">
 
         <input
             type="text"
             name="autor"
             placeholder="Nome do autor"
-            required
         >
 
         <button type="submit">Pesquisar</button>
@@ -178,14 +156,12 @@
             type="text"
             name="nome"
             placeholder="Nome do livro"
-            required
         >
 
         <input
             type="text"
             name="autor"
             placeholder="Autor"
-            required
         >
 
         <button type="submit">Inserir</button>
@@ -195,33 +171,24 @@
 
     <h3>Editar livro</h3>
 
-    <form action="/livros" method="POST">
-
-        <input
-            type="hidden"
-            name="_method"
-            value="PUT"
-        >
+    <form action="/livros" method="PUT">
 
         <input
             type="number"
             name="id"
             placeholder="ID do livro"
-            required
         >
 
         <input
             type="text"
             name="nome"
             placeholder="Novo nome"
-            required
         >
 
         <input
             type="text"
             name="autor"
             placeholder="Novo autor"
-            required
         >
 
         <button type="submit">Editar</button>
@@ -231,19 +198,12 @@
 
     <h3>Excluir livro</h3>
 
-    <form action="/livros" method="POST">
-
-        <input
-            type="hidden"
-            name="_method"
-            value="DELETE"
-        >
+    <form action="/livros" method="DELETE">
 
         <input
             type="number"
             name="id"
             placeholder="ID do livro"
-            required
         >
 
         <button type="submit">Excluir</button>
