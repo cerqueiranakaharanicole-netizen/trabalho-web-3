@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+</head>
+
+<body>
+
+    <h1>Sistema de Biblioteca</h1>
+
+    <h2>Usuários</h2>
+
+    <h3>Pesquisar todos os usuários</h3>
+
+    <form action="/usuarios" method="GET">
+        <button type="submit">Pesquisar</button>
+    </form>
+
+
+    <h3>Pesquisar usuário por documento</h3>
+
+    <form action="/usuarios" method="GET">
+
+        <input
+            type="text"
+            name="documento"
+            placeholder="Documento"
+            required
+        >
+
+        <button type="submit">Pesquisar</button>
+
+    </form>
+
+
+    <h3>Inserir usuário</h3>
+
+    <form action="/usuarios" method="POST">
+
+        <input
+            type="text"
+            name="documento"
+            placeholder="Documento"
+            required
+        >
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+        >
+
+        <button type="submit">Inserir</button>
+
+    </form>
+
+
+    <h3>Editar usuário</h3>
+
+    <form action="/usuarios" method="POST">
+
+        <input
+            type="hidden"
+            name="_method"
+            value="PUT"
+        >
+
+        <input
+            type="text"
+            name="documento"
+            placeholder="Documento"
+            required
+        >
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Novo nome"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Novo e-mail"
+            required
+        >
+
+        <button type="submit">Editar</button>
+
+    </form>
+
+
+    <h3>Excluir usuário</h3>
+
+    <form action="/usuarios" method="POST">
+
+        <input
+            type="hidden"
+            name="_method"
+            value="DELETE"
+        >
+
+        <input
+            type="text"
+            name="documento"
+            placeholder="Documento"
+            required
+        >
+
+        <button type="submit">Excluir</button>
+
+    </form>
+
+
+    <hr>
+
+
+    <h2>Livros</h2>
+
+
+    <h3>Pesquisar todos os livros</h3>
+
+    <form action="/livros" method="GET">
+
+        <button type="submit">Pesquisar</button>
+
+    </form>
+
+
+    <h3>Pesquisar livro por nome</h3>
+
+    <form action="/livros" method="GET">
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Nome do livro"
+            required
+        >
+
+        <button type="submit">Pesquisar</button>
+
+    </form>
+
+
+    <h3>Pesquisar livros de um autor</h3>
+
+    <form action="/livros" method="GET">
+
+        <input
+            type="text"
+            name="autor"
+            placeholder="Nome do autor"
+            required
+        >
+
+        <button type="submit">Pesquisar</button>
+
+    </form>
+
+
+    <h3>Inserir livro</h3>
+
+    <form action="/livros" method="POST">
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Nome do livro"
+            required
+        >
+
+        <input
+            type="text"
+            name="autor"
+            placeholder="Autor"
+            required
+        >
+
+        <button type="submit">Inserir</button>
+
+    </form>
+
+
+    <h3>Editar livro</h3>
+
+    <form action="/livros" method="POST">
+
+        <input
+            type="hidden"
+            name="_method"
+            value="PUT"
+        >
+
+        <input
+            type="number"
+            name="id"
+            placeholder="ID do livro"
+            required
+        >
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Novo nome"
+            required
+        >
+
+        <input
+            type="text"
+            name="autor"
+            placeholder="Novo autor"
+            required
+        >
+
+        <button type="submit">Editar</button>
+
+    </form>
+
+
+    <h3>Excluir livro</h3>
+
+    <form action="/livros" method="POST">
+
+        <input
+            type="hidden"
+            name="_method"
+            value="DELETE"
+        >
+
+        <input
+            type="number"
+            name="id"
+            placeholder="ID do livro"
+            required
+        >
+
+        <button type="submit">Excluir</button>
+
+    </form>
+
+</body>
+
+</html>
